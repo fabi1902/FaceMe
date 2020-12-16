@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>Bitte Daten eingeben</ion-item>
+  <ion-card>
+    <ion-item>
+      <ion-label position="floating">Email:</ion-label>
+      <ion-input [(ngModel)]="Email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password:</ion-label>
+      <ion-input type="password" [(ngModel)]="Password"></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-button (click)="login()">Anmelden!</ion-button>
+          <ion-button href="/home">Weiter zu Home!</ion-button>
+          <ion-button (click)="logout()">Logout!</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-button (click)="loginFacebook()">Anmelden mit Facebook!</ion-button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-card>
+    <ion-item>
+      <ion-label>Noch nicht registriert?</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="GoToRegister()">Weiter zur Registrierung!</ion-button>
+    </ion-item>
+  </ion-card>
+
+</ion-content>

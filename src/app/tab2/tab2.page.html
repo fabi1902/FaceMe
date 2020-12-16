@@ -1,17 +1,50 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      FaceMe
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Anna:</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col offset="1.5">
+      <ion-icon style="zoom:18.0;" name="person-circle-outline"></ion-icon>
+    </ion-col>
+    </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab style="zoom:1.5;" vertical="center" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="help-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Du:</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col offset="1.5">
+      <ion-icon style="zoom:18.0;" name="person-circle-outline"></ion-icon>
+    </ion-col>
+    </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  
 </ion-content>

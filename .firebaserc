@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "faceme-ff44d": {
+      "hosting": {
+        "app": [
+          "faceme-ff44d"
+        ]
+      }
+    }
+  }
+}

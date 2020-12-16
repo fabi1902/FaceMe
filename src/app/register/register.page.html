@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>Bitte Daten eingeben</ion-item>
+  <ion-card>
+    <ion-item>
+      <ion-label position="floating">Hier Email eingeben:</ion-label>
+      <ion-input [(ngModel)]="Email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Hier Passwort eingeben:</ion-label>
+      <ion-input type="password" [(ngModel)]="Password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Passwort wiederholen</ion-label>
+      <ion-input type="password" [(ngModel)]="cPassword"></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-button size="default" (click)="register()">Register!</ion-button>
+          <ion-button slot="end" href="/home">
+            <ion-icon name="home"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-item>
+    <ion-label>Facebook Button nur mit HTTPs Version</ion-label>
+  </ion-item>
+  <ion-item>
+    <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default"
+      data-auto-logout-link="false" data-use-continue-as="false"></div>
+  </ion-item>
+  <ion-card>
+    <ion-item>
+      <ion-label>Schon registriert?</ion-label>
+      <ion-button (click)="GoToLogin()">Weiter zur Anmeldung!</ion-button>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-button (click)="registerFacebook()">Register mit Facebook!(HTTP Version)</ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>
